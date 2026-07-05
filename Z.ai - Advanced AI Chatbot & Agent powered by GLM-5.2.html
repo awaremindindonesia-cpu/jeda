@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://chat.z.ai/space/s1en053uq1s1-art -->
+<html lang="en-US" class="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="icon" type="image/png" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<link rel="shortcut icon" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<link rel="apple-touch-icon" sizes="512x512" href="https://z-cdn.chatglm.cn/z-ai/static/logo.svg">
+		<meta name="apple-mobile-web-app-title" content="Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2">
+		
+		<meta name="keywords" content="GLM-4.6, GLM 4.6, GLM-4.6-Air, GLM 4.6 Air, GLM 4.5, GLM4.5, GLM4.6, Deep Research, z ai, z.ai, GLM 4.5 AI, GLM 4.6 AI, GLM AI, Chat Z, zai, Chat AI, GLM, z.ia, Chat Z AI, AI chat, chatbot, z.ai chat, free ai chat, free AI, free ai chat no login, GLM-4.5, GLM-4.5 chat, GLM-4.1V, GLM-4.5V, AI assistant chat, AI PPT, AI presentation, AI presentation maker, AI slides maker, AI slides, slide deck, pitch deck, AI deck generator, free pitch deck generator, AI PPT, AI PPT maker, AI for Google Slides, AI for PowerPoint, AI writer, AI writing assistant, AI code generator, full stack code generation, AI full stack developer, claude code, Roo Code, Cline, Kilo Code, OpenCode, Codex, Cursor, GLM Coding Plan, GLM Coding, AI Coding, code writer ai, magic design, magic design tool, AI inspiration board, visual brainstorming AI, chat with AI, AI对话, AI聊天, 聊天机器人, 免费AI聊天, AI做PPT, AI写作, AI编程, 全栈开发, 灵感画板, AI tool, AI helper, AI for students, AI for marketers, AI for content creation, ChatGPT, chatgpt free, Free ChatGPT, gpt chat, Gemini, Grok, Claude, Poe AI, YouChat, Jasper AI, deepseek, qwen, 豆包, 文心一言, AI搜问答, 写作灵感AI, 代码解释工具, PPT思路生成, 如何用AI做PPT, create pitch deck from brief, AI business plan presentation, marketing report slides, AI academic paper assistant, AI legal contract drafting, write social media calendar, AI email responder,  VS Code AI assistant, AI for Notion, AI for Figma, AI math problem solver from image, AI geoguessr solver, image to code generator, table extractor from image, chart data extractor, document analysis AI, image caption generator, visual Q&amp;A, 看图猜成语, AI拍照解题, 数学题解答, 物理题解答, GeoGuess AI, 图片转表格, 图片读数据, 看图问答, analyze video, summarize video content, generate video transcript, find object in image, what is in this picture, 视频分析, 视频内容摘要, 生成视频字幕, 图片里有什么, 识别图中物体, GLM-4.7, GLM 4.7, GLM4.7, skills, coding plan, GLM-5, GLM-5.0, GLM5, GLM 5, Pony, Pony Alpha, GLM-5.2, GLM 5.2, GLM5.2, long-horizon, long-running">
+
+		<link rel="manifest" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/manifest.json">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+		
+		<meta name="referrer" content="no-referrer">
+		<link rel="search" type="application/opensearchdescription+xml" title="Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2" href="https://z-cdn.chatglm.cn/z-ai/frontend/static/opensearch.xml">
+		<script async="" src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-Z8QTHYBHP3');
+		</script>
+
+		<script>
+			let metrics = {};
+			const observer = new PerformanceObserver((list) => {
+				const entries = list.getEntries();
+
+				entries.forEach((entry) => {
+					// 根据不同的entry类型处理不同的性能指标
+					switch (entry.entryType) {
+						case 'navigation':
+							{
+								const navEntry = entry;
+								metrics = {
+									...metrics,
+									dns: navEntry.domainLookupEnd - navEntry.domainLookupStart,
+									response: navEntry.responseEnd - navEntry.responseStart,
+									dom_parse: navEntry.domInteractive - navEntry.responseEnd,
+									dom_ready: navEntry.domContentLoadedEventEnd - navEntry.fetchStart,
+									resource: navEntry.domComplete - navEntry.domContentLoadedEventEnd,
+									first_interactive: navEntry.domInteractive - navEntry.fetchStart,
+									first_byte: navEntry.responseStart - navEntry.domainLookupStart,
+									loaded: navEntry.loadEventEnd - navEntry.fetchStart
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+								// 发送性能指标到阿里云日志服务
+							}
+							break;
+
+						case 'paint':
+							if (entry.name === 'first-paint') {
+								metrics = {
+									...metrics,
+									first_paint: entry.startTime
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+							}
+							if (entry.name === 'first-contentful-paint') {
+								metrics = {
+									...metrics,
+									first_contentful_paint: entry.startTime
+								};
+								sessionStorage.setItem('performance', JSON.stringify(metrics));
+							}
+							break;
+					}
+				});
+			});
+
+			// 观察的性能指标类型
+			observer.observe({
+				entryTypes: ['navigation', 'paint']
+			});
+		</script>
+
+		<script>
+			function resizeIframe(obj) {
+				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+			}
+		</script>
+
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			const initTheme = () => {
+				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
+				// 取用户浏览器设置的主题
+				// const prefersTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+				const prefersTheme = 'light';
+
+				if (!localStorage?.theme) {
+					localStorage.theme = prefersTheme;
+				}
+
+				if (localStorage.theme === 'system') {
+					document.documentElement.classList.add(prefersTheme);
+					metaThemeColorTag.setAttribute(
+						'content',
+						prefersTheme === 'light' ? '#F4F6F8' : '#141618'
+					);
+				} else if (localStorage.theme === 'light') {
+					document.documentElement.classList.add('light');
+					metaThemeColorTag.setAttribute('content', '#F4F6F8');
+				} else {
+					document.documentElement.classList.add('dark');
+					metaThemeColorTag.setAttribute('content', '#141618');
+				}
+
+				// window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
+				// 	if (localStorage.theme === 'system') {
+				// 		if (e.matches) {
+				// 			document.documentElement.classList.add('dark');
+				// 			document.documentElement.classList.remove('light');
+				// 			metaThemeColorTag.setAttribute('content', '#141618');
+				// 		} else {
+				// 			document.documentElement.classList.add('light');
+				// 			document.documentElement.classList.remove('dark');
+				// 			metaThemeColorTag.setAttribute('content', '#F4F6F8');
+				// 		}
+				// 	}
+				// });
+			};
+			initTheme();
+		</script>
+
+		
+
+		<script>
+			// 炫酷的控制台介绍 - 根据语言显示
+			(function () {
+				// 检测用户语言偏好
+				const userLang = navigator.language || navigator.userLanguage;
+				const isChinese =
+					userLang.startsWith('zh') ||
+					userLang.includes('CN') ||
+					userLang.includes('TW') ||
+					userLang.includes('HK');
+
+				// 共同的 ASCII Logo
+				const logoLines = [
+					'%c███████╗     █████╗ ██╗',
+					'%c╚══███╔╝    ██╔══██╗██║',
+					'%c  ███╔╝     ███████║██║',
+					'%c ███╔╝      ██╔══██║██║',
+					'%c███████╗ ██╗██║  ██║██║',
+					'%c╚══════╝ ╚═╝╚═╝  ╚═╝╚═╝'
+				];
+				const logoColors = [
+					'color: #ff6b6b; font-family: monospace; font-size: 12px;',
+					'color: #4ecdc4; font-family: monospace; font-size: 12px;',
+					'color: #45b7d1; font-family: monospace; font-size: 12px;',
+					'color: #f9ca24; font-family: monospace; font-size: 12px;',
+					'color: #ff9ff3; font-family: monospace; font-size: 12px;',
+					'color: #6c5ce7; font-family: monospace; font-size: 12px;'
+				];
+
+				if (isChinese) {
+					// 中文版本
+					console.log(
+						'%c🚀 欢迎来到 Z.ai 🚀',
+						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
+					);
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log(
+						'%c✨ 基于开源GLM模型的智能AI助手',
+						'color: #a29bfe; font-size: 14px; font-weight: bold;'
+					);
+					console.log('%c🧠 支持文本生成、推理和深度研究', 'color: #fd79a8; font-size: 12px;');
+					console.log('%c🌍 为中英文用户量身定制', 'color: #00b894; font-size: 12px;');
+					console.log('%c💡 免费开源的ChatGPT替代方案', 'color: #fdcb6e; font-size: 12px;');
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log(
+						'%c由 ❤️ 和大量 ☕ 驱动',
+						'color: #e84393; font-size: 11px; font-style: italic;'
+					);
+					console.log('');
+					console.log(
+						'%c🚀 加入我们！我们正在招聘优秀人才！',
+						'color: #00b894; font-size: 13px; font-weight: bold;'
+					);
+					console.log(
+						'%c💼 查看职位: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
+						'color: #0984e3; font-size: 12px; text-decoration: underline;'
+					);
+				} else {
+					// 英文版本
+					console.log(
+						'%c🚀 Welcome to Z.ai 🚀',
+						'color: #00d4ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #00d4ff;'
+					);
+					logoLines.forEach((line, index) => console.log(line, logoColors[index]));
+					console.log('');
+					console.log(
+						'%c✨ Advanced AI assistant powered by open-source GLM models',
+						'color: #a29bfe; font-size: 14px; font-weight: bold;'
+					);
+					console.log(
+						'%c🧠 Supports text generation, reasoning, and deep research',
+						'color: #fd79a8; font-size: 12px;'
+					);
+					console.log(
+						'%c🌍 Tailored for both English and Chinese users',
+						'color: #00b894; font-size: 12px;'
+					);
+					console.log(
+						'%c💡 Free and open-source ChatGPT alternative',
+						'color: #fdcb6e; font-size: 12px;'
+					);
+					console.log('');
+					console.log('%c---', 'color: #ddd;');
+					console.log(
+						'%cPowered by ❤️ and lots of ☕',
+						'color: #e84393; font-size: 11px; font-style: italic;'
+					);
+					console.log('');
+					console.log(
+						'%c🚀 Join us! We are hiring talented people!',
+						'color: #00b894; font-size: 13px; font-weight: bold;'
+					);
+					console.log(
+						'%c💼 View jobs: https://zhipu-ai.jobs.feishu.cn/s/stmyTm5lxaU',
+						'color: #0984e3; font-size: 12px; text-decoration: underline;'
+					);
+				}
+			})();
+		</script>
+
+		<script type="module" crossorigin="" src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/index-D0dKwo6g.js"></script>
+		<link rel="stylesheet" crossorigin="" href="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/index-CyqhDp8-.css">
+	<title>Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2</title><meta name="description" content="Amazing content sharing from Z.AI"><meta property="og:type" content="website"><meta property="og:site_name" content="Z.AI"><meta property="og:title" content="Z.AI Share"><meta property="og:description" content="Amazing content sharing from Z.AI"><meta property="og:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta property="og:image:alt" content="Z.AI Share"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400"><meta property="og:image:type" content="image/png"><meta property="og:url" content="http://chat.z.ai/space/s1en053uq1s1-art"><meta property="article:author" content="Z.AI"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Z.AI Share"><meta name="twitter:description" content="Amazing content sharing from Z.AI"><meta name="twitter:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta name="twitter:image:alt" content="Z.AI Share"><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="application-name" content="Z.AI"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><link rel="canonical" href="http://chat.z.ai/space/s1en053uq1s1-art"><script src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/jweixin-1.6.0.js"></script>
+<script>
+(function() {
+  var frontendCallId = Math.random().toString(36).substring(2, 8);
+  console.log('[WeChat-Frontend-' + frontendCallId + '] ===== 开始前端微信JS-SDK初始化 =====');
+  console.log('[WeChat-Frontend-' + frontendCallId + '] 当前页面URL:', window.location.href);
+  console.log('[WeChat-Frontend-' + frontendCallId + '] 当前页面URL (去掉#):', window.location.href.split('#')[0]);
+  console.log('[WeChat-Frontend-' + frontendCallId + '] 签名配置:', {
+    debug: false,
+    appId: 'wxa5796e47c57570b1',
+    timestamp: 1783238264,
+    nonceStr: 'vTbKGrzekgMlrCrW',
+    signature: 'd535ba3ba65b4ef875e627d6e242654694ff28a4',
+    jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"]
+  });
+
+  // 微信 JS-SDK 配置
+  wx.config({
+    debug: false, // 根据环境变量设置debug模式
+    appId: 'wxa5796e47c57570b1', // 公众号的唯一标识
+    timestamp: 1783238264, // 生成签名的时间戳
+    nonceStr: 'vTbKGrzekgMlrCrW', // 生成签名的随机串
+    signature: 'd535ba3ba65b4ef875e627d6e242654694ff28a4', // 签名
+    jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"] // 需要使用的JS接口列表
+  });
+
+  console.log('[WeChat-Frontend-' + frontendCallId + '] wx.config() 调用完成');
+
+  // 微信 JS-SDK 就绪回调
+  wx.ready(function () {
+    console.log('[WeChat-Frontend-' + frontendCallId + '] WeChat JS-SDK ready - 微信JS-SDK就绪!');
+
+    // 分享给朋友的配置
+    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置分享给朋友...');
+    wx.updateAppMessageShareData({
+      title: 'Z.AI Share',
+      desc: 'Amazing content sharing from Z.AI',
+      link: 'http://chat.z.ai/space/s1en053uq1s1-art',
+      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
+      success: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享给朋友成功');
+      },
+      cancel: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享给朋友取消');
+      }
+    });
+
+    // 分享到朋友圈的配置
+    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置分享到朋友圈...');
+    wx.updateTimelineShareData({
+      title: 'Z.AI Share',
+      link: 'http://chat.z.ai/space/s1en053uq1s1-art',
+      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
+      success: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享到朋友圈成功');
+      },
+      cancel: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 分享到朋友圈取消');
+      }
+    });
+
+    // 兼容旧版本微信客户端
+    console.log('[WeChat-Frontend-' + frontendCallId + '] 开始配置兼容旧版本分享...');
+    wx.onMenuShareAppMessage({
+      title: 'Z.AI Share',
+      desc: 'Amazing content sharing from Z.AI',
+      link: 'http://chat.z.ai/space/s1en053uq1s1-art',
+      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
+      success: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享给朋友成功');
+      },
+      cancel: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享给朋友取消');
+      }
+    });
+
+    wx.onMenuShareTimeline({
+      title: 'Z.AI Share',
+      link: 'http://chat.z.ai/space/s1en053uq1s1-art',
+      imgUrl: 'https://z-cdn.chatglm.cn/z-ai/static/share-logo.png',
+      success: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享到朋友圈成功');
+      },
+      cancel: function () {
+        console.log('[WeChat-Frontend-' + frontendCallId + '] 兼容版分享到朋友圈取消');
+      }
+    });
+
+    console.log('[WeChat-Frontend-' + frontendCallId + '] 所有分享配置完成');
+  });
+
+  // 微信 JS-SDK 错误回调
+  wx.error(function(res){
+    console.error('[WeChat-Frontend-' + frontendCallId + '] 微信JS-SDK错误:', res);
+    console.error('[WeChat-Frontend-' + frontendCallId + '] 错误详情:', JSON.stringify(res, null, 2));
+    // 可以在这里处理签名验证失败等错误
+  });
+
+  console.log('[WeChat-Frontend-' + frontendCallId + '] ===== 微信JS-SDK初始化完成 =====');
+})();
+</script><link rel="modulepreload" as="script" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.70/assets/_page-Ds2E2W9n.js"><link rel="stylesheet" crossorigin="" href="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/_page-3CViShiz.css"></head>
+
+	<body><script src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/browser-sdk.js" crossorigin=""></script>
+		<script>
+			const env = location.hostname === 'chat.z.ai' ? 'prod' : 'pre';
+			!(function (c, b, d, a) {
+				c[a] || (c[a] = {});
+				c[a] = {
+					pid: 'j2c03hoppk@9a8be198b65ba4b',
+					endpoint: 'https://j2c03hoppk-default-cn.rum.aliyuncs.com',
+					// 设置环境信息，参考值：'prod' | 'gray' | 'pre' | 'daily' | 'local'
+					env: env,
+					// 设置路由模式， 参考值：'history' | 'hash'
+					spaMode: 'history',
+					collectors: {
+						// 页面性能指标监听开关，默认开启
+						perf: true,
+						// WebVitals指标监听开关，默认开启
+						webVitals: false,
+						// Ajax监听开关，默认开启
+						api: true,
+						// 静态资源开关，默认开启
+						staticResource: true,
+						// JS错误监听开关，默认开启
+						jsError: true,
+						// 控制台错误监听开关，默认开启
+						consoleError: false,
+						// 用户行为监听开关，默认开启
+						action: true
+					},
+					// 链路追踪配置开关，默认关闭
+					tracing: false,
+					parseViewName(url) {
+						const pathname = new URL(url).pathname;
+						if (!pathname) {
+							return '/';
+						}
+						return pathname.replace(/(.*)\/[a-f0-9-]+$/g, '$1');
+					},
+					evaluateApi(options, response) {
+						const traceId = response?.headers?.get?.('X-Trace-Id') || 'unknown';
+
+						return {
+							name: options.url.replace(/\/[a-f0-9-]{36}/g, '/**'),
+							properties: {
+								traceId
+							}
+						};
+					}
+				};
+				with (b)
+					with (body)
+						with (insertBefore(createElement('script'), firstChild))
+							setAttribute('crossorigin', '', (src = d));
+			})(window, document, 'https://sdk.rum.aliyuncs.com/v2/browser-sdk.js', '__rum');
+		</script>
+		<div id="app" style="display: contents"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><iframe class="w-screen h-screen" frameborder="0" sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" title="html" src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/saved_resource.html"></iframe><!----> <section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-nbs0zk" tabindex="-1" aria-label="Notifications alt+T"><!----></section><!----> <div class="fixed top-[60px] right-4 z-[9999] flex flex-col gap-3 pointer-events-none"></div><!----><!----> <!----></div>
+
+		<script>
+			var token = localStorage.getItem('token');
+			var base = window.WEBUI_BASE_URL || '';
+			var lang = localStorage.locale ?? (navigator.language.includes('zh') ? 'zh-CN' : 'en-US');
+			var config = {
+				credentials: 'include',
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+					...(token ? { Authorization: `Bearer ${token}` } : {}),
+					'Accept-Language': lang
+				}
+			};
+
+			var sessionFetch = fetch(`${base}/api/v1/auths/`, config).then(async (res) => {
+				if (!res.ok) throw await res.json();
+				return res.json();
+			});
+
+			window.GLOBAL_FETCHES = {
+				session: sessionFetch,
+				config: fetch(`${base}/api/config`, config).then(async (res) => {
+					if (!res.ok) throw await res.json();
+					return res.json();
+				}),
+				// token 存在时与其他请求并行；不存在时需等 session 之后再请求 models
+				// 至少要 cookie 里有 token 才能正常请求 models
+				models: token
+					? fetch(`${base}/api/models`, config)
+					: sessionFetch.then(() => fetch(`${base}/api/models`, config)),
+				settings:
+					token &&
+					fetch(`${base}/api/v1/users/user/settings`, config).then(async (res) => {
+						if (!res.ok) throw await res.json();
+						return res.json();
+					})
+			};
+		</script>
+		<script async="" src="./Z.ai - Advanced AI Chatbot &amp; Agent powered by GLM-5.2_files/jquery.min.js"></script>
+	
+
+
+<style type="text/css" nonce="">
+	@keyframes pulse {
+		50% {
+			opacity: 0.65;
+		}
+	}
+
+	.animate-pulse-fast {
+		animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+</style>
+</body></html>
